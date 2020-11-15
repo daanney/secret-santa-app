@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  build:
+    commands:
+      - mvn package
+  post_build:
+    commands:
+      - cp ./target/profanity-check-1.0.0.jar profanity-check.jar
+artifacts:
+  paths:
+    - 'profanity-check.jar'
