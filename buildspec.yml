@@ -9,7 +9,7 @@ phases:
       - mvn package
   post_build:
     commands:
-      - cp ./target/profanity-check-1.0.0.jar profanity-check.jar
+      - cp ./target/secret-santa-app-0.0.1-SNAPSHOT.jar secret-santa-app.jar
 artifacts:
   paths:
-    - 'profanity-check.jar'
+    - 'secret-santa-app.jar'
